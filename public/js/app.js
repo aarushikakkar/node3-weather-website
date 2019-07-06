@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit',function(e){
   messageTwo.textContent=' ';//used to inject data to browser
   e.preventDefault();//prevent the refreshing of default values means if we write anythig in locatiomn then it wont clear and stay on that input field
   const location=search.value
-  fetch('http://localhost:3000/weather?address='+location).then(function(response){
+  fetch('/weather?address='+location).then(function(response){   //removing localhost 3000 for address
     response.json().then(function(data){
       if(data.error)
       {
