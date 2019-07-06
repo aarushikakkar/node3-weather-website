@@ -1,0 +1,54 @@
+h1{
+  color:grey;
+  font-size:64 px;
+}
+.portrait{
+  width:250px;
+}
+body
+{
+  color:#333333;
+  font-family:arial;
+  max-width:650px;
+  margin: 0 auto;       //margin value for top-bottom and margin value for left-right
+  padding:0 16px;
+
+  display:flex;
+  flex-direction:column;//that is everything goes from top to bottom, and row=goes from left to right
+  min-height:100vh
+}
+
+.min-content
+{
+  flex-grow:1;//helps element to get as much as space as it needs
+
+}
+footer{
+  color:#888888;
+  border-top:1px solid #eeeeee;//margin width, margin type, color
+  margin-top:16px;
+  background:blue;
+  padding:16px 0px;//margin between inner content and footer
+}
+
+header{
+  margin-top:16px;
+  margin-bottom:48px;
+}
+header a              //header putting so that all a href dont showw this stylling
+{
+  color:#888888;
+  margin-right:64px;
+  text-decoration: none;//or put value=underline
+}
+input{
+  border:1px solid #cccccc;
+  padding:8px;
+}
+button{
+  cursor:pointer;
+  border:1px solid #888888;
+  background:#888888;
+  color:white;
+  padding:8px;
+}
